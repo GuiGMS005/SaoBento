@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Slab:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #6495ED
+}
+
+nav.menu{
+    width: 40px;
+    height: 90%;
+    background-color: blue ;
+    padding: 40px 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+nav.menu.expandir{
+    width: 300px;
+}
+
+
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 30px;
+}
+
+ul{
+    height: 90%;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: darkred;
+}
+
+ul li.item-menu:hover {
+    background-color: darkred;
+}
+
+ul li.item-menu a{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+   
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 60px;
+    transition: .5s;
+
+}
+
+nav.menu.expandir .txt-link{
+    margin-left: 40px;
+}
+
+
+
+
+div > img{
+    width: 25%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 5PX;
+    display: block;
+}
+
+div > h1 > p{
+    margin-left: 40%;
+    color: white;
+    margin-top: -325px;
+    font-size: 25px;
+}
+
+div > h2 > p{
+    margin-left: 40%;
+    margin-top: 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    text-align: justify;
+}
+
+div > h3 > p{
+    margin-left: 40%;
+    color: white;
+    margin-top: 25px;
+    display: block;
+}
