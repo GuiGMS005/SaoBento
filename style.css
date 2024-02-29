@@ -1,114 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    height: 100vh;
-    background-color: #6495ED
+header {
+    background-color: #0000cd;
+    box-shadow: 0px 3px 10px black;
 }
 
-nav.menu{
-    width: 40px;
-    height: 90%;
-    background-color: blue ;
-    padding: 40px 0 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-
-nav.menu.expandir{
-    width: 300px;
-}
-
-
-
-.btn-expandir{
-    width: 100%;
-    padding-left: 10px;
-    cursor: pointer;
-}
-
-.btn-expandir > i{
-    color: white;
-    font-size: 30px;
-}
-
-ul{
-    height: 90%;
-}
-
-ul li.item-menu{
-    transition: .2s;
-}
-
-ul li.ativo{
-    background-color: darkred;
-}
-
-ul li.item-menu:hover {
-    background-color: darkred;
-}
-
-ul li.item-menu a{
-    color: white;
-    font-size: 18px;
+.nav-bar {
     display: flex;
-    padding: 15px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+
+.nav-link {
     text-decoration: none;
-   
+    font-size: 1.15rem;
+    color: snow;
+    font-weight: 400;
 }
 
-ul li.item-menu a .txt-link{
-    margin-left: 60px;
-    transition: .5s;
-
+.nav-link:hover {
+    cursor: pointer;
+    
 }
 
-nav.menu.expandir .txt-link{
-    margin-left: 40px;
-}
-
-
-
-
-div > img{
-    width: 25%;
-    margin-top: 10%;
-    margin-left: 10%;
-    border-radius: 5PX;
-    display: block;
-}
-
-div > h1 > p{
-    margin-left: 40%;
-    color: white;
-    margin-top: -325px;
-    font-size: 25px;
-}
-
-div > h2 > p{
-    margin-left: 40%;
-    margin-top: 30px;
-    color: white;
-    font-size: 15px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    padding: 20px; 
-    text-align: justify;
-}
-
-div > h3 > p{
-    margin-left: 40%;
-    color: white;
-    margin-top: 25px;
-    display: block;
-}

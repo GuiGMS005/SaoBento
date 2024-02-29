@@ -1,23 +1,14 @@
-
-var menuItem = document.querySelectorAll('.item-menu')
-
-function selectLink(){
-    menuItem.forEach((item)=>
-      item.classList.remove('ativo')
-    )
-    this.classList.add('ativo')
-}
-
-menuItem.forEach((item)=>
-      item.addEventListener('click', selectLink)
-)
+var navLinks = document.querySelectorAll('.nav-link');
 
 
-//Expandir o menu
+navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+       
+        navLinks.forEach(function(innerLink) {
+            innerLink.classList.remove('underline');
+        });
 
-var btnExp = document.querySelector('#btn-exp')
-var menuSide = document.querySelector('.menu')
-
-btnExp.addEventListener('click', function(){
-    menuSide.classList.toggle('expandir')
-})
+       
+        link.classList.add('underline');
+    });
+});
