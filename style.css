@@ -46,6 +46,12 @@ header {
 
 .nav-link:hover {
     cursor: pointer;
-    
+
+}
+
+img {
+    display: flex;
+    width: 60%;
+    height: 100%;
 }
 
